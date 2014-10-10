@@ -1,0 +1,71 @@
+﻿@model Portfolio.Models.Inquiry
+
+<div class="water">
+    <span id="back" class="glyphicon glyphicon-chevron-left enlarge hidden"></span>
+    <div id="logo" class="row logo">
+        <div class="col-sm-1-offset-6">
+            <a href="/">Seth Gardner, UI/UX Designer</a>
+        </div>
+    </div>
+    <div id="nav"class="row moveup">
+        <ul class="navlist col-lg-4 col-lg-offset-4">
+            <li class="col-lg-2 col-lg-offset-2"><a href="#work">Work</a></li>
+            <li class="col-lg-2"><a href="#process">Process</a></li>
+            <li class="col-lg-2"><a href="#about">About</a></li>
+            <li class="col-lg-2"><a href="#contact">Contact</a></li>
+        </ul>
+        <hr />
+    </div>
+    <div id="Seth" class="row seth">
+        <p>Hello, my name is Seth and I'm a</p>
+        <p class="bigorange">UX & UI Designer</p>
+        <p>based in the sunshine state of Florida.</p>
+    </div>
+</div>
+<div id="work" class="recent-work">
+    <p>Most Recent Work</p>
+    <div>
+        <ul>
+            <li class="">
+                <a class="btn-link rr" href="#top"></a>
+            </li>
+            <li class="">
+                <a class="btn-link pw" href="#top"></a>
+            </li>
+            <li class="">
+                <a class="btn-link adv" href="#top"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="process" class="process">
+</div>
+<div id="about" class="row about-me">
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+</div>
+<div id="contact" class="designThings">
+    <div class="row col-md-4 col-md-offset-4">
+        <p class="smallOrange"> Let's Design Things  </p>
+        <p class="pushDown">Interested in working with me?</p>
+        <div class="buttonContainer">
+            <div class="btn-link button"><a href="">CV\CL</a></div>
+            <div class="btn-link button"><a href="">Contact Me</a></div>
+        </div>
+    </div>
+    <div style="color:white">
+        <p>@Model.FirstName</p> 
+        <p>@Model.LastName</p> 
+        <p>@Model.Email</p> 
+        <p>@Model.Description</p>
+        <p>@Model.DateTime</p> 
+    </div>
+    <div class="hidden">
+        @using (@Html.BeginForm("Save", "Home", FormMethod.Post))
+        {
+            
+        }        
+    </div>
+</div>
