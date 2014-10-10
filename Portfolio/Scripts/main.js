@@ -6,8 +6,6 @@
         $('a[href^="#"]').on('click', function (e) {
             e.preventDefault();
 
-            debugger
-
             var target = this.hash,
             $target = $(target);
 

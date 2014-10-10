@@ -24,6 +24,4 @@ namespace Portfolio.Code
 
         public virtual DbSet<Inquiry> Inquiries { get; set; }
     }
-
-  
 }

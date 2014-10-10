@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Portfolio.Code;
 using Portfolio.Models;
 
@@ -10,23 +6,22 @@ namespace Portfolio.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IRepository _repo;
-        public HomeController()
+        private readonly IUnitOfWork _unitOfWork;
+        public HomeController(IUnitOfWork unitOfWork)
         {
-        }
-        public HomeController(IRepository repository)
-        {
-            _repo = repository;
+           
+            _unitOfWork = unitOfWork;
         }
         public ActionResult Index()
         {
-            var inquiry = _repo.GetTopInquiry();
+            var inquiry = _unitOfWork.Repository.GetTopInquiry();
             return View(inquiry);
         }
 
-        public JsonResult Save(Inquiry inq)
+        public void Save(Inquiry inquiry)
         {
-            return new JsonResult(){};
+            _unitOfWork.Repository.SaveInquiry(inquiry);
+            _unitOfWork.Save();
         }
 
         public ActionResult About()

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using Portfolio.Models;
 
@@ -6,27 +8,25 @@ namespace Portfolio.Code
 {
     public class Repository : IRepository
     {
-        private readonly InquiryContext _context;
-
+        private readonly InquiryContext _dbContext;
         public Repository(InquiryContext context)
         {
-            _context = context;
+            _dbContext = context;
         }
 
         public IEnumerable<Inquiry> GetInquiries()
         {
-            return _context.Inquiries;
+            return _dbContext.Inquiries;
         }
 
         public Inquiry GetTopInquiry()
         {
-            return _context.Inquiries.FirstOrDefault();
+            return _dbContext.Inquiries.FirstOrDefault();
         }
 
         public void SaveInquiry(Inquiry inquiry)
         {
-            _context.Inquiries.Add(inquiry);
-            _context.SaveChanges();
+            _dbContext.Inquiries.Add(inquiry);
         }
     }
 }
