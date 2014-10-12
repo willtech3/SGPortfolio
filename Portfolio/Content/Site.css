@@ -67,7 +67,7 @@
 
 hr {
     clear: both;
-    width: 23%;
+    width: 33%;
     margin-left:auto;
     margin-right: auto;
 }
@@ -122,6 +122,7 @@ hr {
 }
 .process {
     background-image:url('../Content/Images/FINAL_IMAGE_EXAMPLE.jpg');
+    background-repeat: no-repeat;
     height:1080px;
 }
 
@@ -147,7 +148,7 @@ hr {
 }
 
 .designThings {
-    height:700px;
+    height:750px;
     background-image: url('../Content/Images/contactbkg.jpg')
 }
 
@@ -171,16 +172,20 @@ hr {
 }
 
 .buttonContainer {
-    padding-left: 75px;
     margin-top: 50px;
     height: 500px;
+    border: 1px solid black;
+}
+
+.buttonContainer div {
+    text-align: center;
+    display: inline-block;
+    float: none;
 }
 
 .button {
-    width:200px;
+    width: 200px;
     height: 100px;
-    float: left;
-    margin-right: 40px;
     background-color: #ffab00;
     color: white;
     font-size: 2em;
@@ -193,6 +198,7 @@ hr {
     box-shadow: inset 0px -10px 0px -3px #A36E00;
     -moz-box-shadow: inset 0px -10px 0px -3px #A36E00;
     -webkit-box-shadow: inset 0px -10px 0px -3px #A36E00;
+    border: 1px solid black;
 }
 
 .button a:link {
@@ -223,7 +229,6 @@ hr {
     float:right;
     margin-top: 82px;
 }
-
 
 
 
