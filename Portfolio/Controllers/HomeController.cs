@@ -23,7 +23,10 @@ namespace Portfolio.Controllers
 
         public ActionResult Save(Inquiry inquiry)
         {
-            _repo.SaveInquiry(inquiry);
+            if (ModelState.IsValid)
+            {
+                _repo.SaveInquiry(inquiry);    
+            }
             return RedirectToAction("Index");
 
         }

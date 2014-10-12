@@ -43,11 +43,15 @@
         $("#inquiry").fadeIn(2000);
     });
 
-    $("#cancel").on('click', function () {
+    $("#cancel").on('click', function (event) {
         event.preventDefault();
         $("#inquiry").hide().addClass("hidden");
         $(".buttonContainer").hide().fadeIn('slow');
         $(".pushDown").hide().fadeIn('slow');
+    });
+
+    var validate = $('#inquiry').validate({
+        // your rules & options
     });
 
     $("#resume").on('click', function() {

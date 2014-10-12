@@ -26,6 +26,7 @@
     background:url('../Content/Images/bkg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     min-height: 750px;
     margin-top:99px;
