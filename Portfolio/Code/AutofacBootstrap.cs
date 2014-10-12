@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Web;
 using Autofac;
 using Autofac.Integration.Mvc;
+using Microsoft.Ajax.Utilities;
 
 namespace Portfolio.Code
 {
@@ -14,10 +15,8 @@ namespace Portfolio.Code
         internal static void Init(ContainerBuilder builder)
         {
             builder.RegisterType<Portfolio.Code.InquiryContext>();
-            builder.RegisterType<UnitOfWork>()
-                .As<IUnitOfWork>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<Repository>()
-                .As<IRepository>();
+                .As<IRepository>().InstancePerLifetimeScope();
         }
     }
 }

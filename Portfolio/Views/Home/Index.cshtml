@@ -1,18 +1,21 @@
 ﻿@model Portfolio.Models.Inquiry
+@{
+    ViewBag.Title = "Seth Gardner Portfolio";
+}
 
 <div class="water">
-    <span id="back" class="glyphicon glyphicon-chevron-left enlarge hidden"></span>
+    <span id="back" class="glyphicon glyphicon-chevron-left btn enlarge hidden"></span>
     <div id="logo" class="row logo">
         <div class="col-sm-1-offset-6">
             <a href="/">Seth Gardner, UI/UX Designer</a>
         </div>
     </div>
     <div id="nav"class="row moveup">
-        <ul class="navlist col-lg-6 col-lg-offset-3">
-            <li class="col-lg-2 col-lg-offset-2"><a href="#work">Work</a></li>
-            <li class="col-lg-2"><a href="#process">Process</a></li>
-            <li class="col-lg-2"><a href="#about">About</a></li>
-            <li class="col-lg-2"><a href="#contact">Contact</a></li>
+        <ul class="navlist col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+            <li class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2"><a href="#work">Work</a></li>
+            <li class="col-md-2 col-lg-2"><a href="#process">Process</a></li>
+            <li class="col-md-2 col-lg-2"><a href="#about">About</a></li>
+            <li class="col-md-2 col-lg-2"><a href="#contact">Contact</a></li>
         </ul>
         <hr />
     </div>
@@ -26,7 +29,7 @@
     <p>Most Recent Work</p>
     <div>
         <ul>
-            <li class="">
+            <li>
                 <a class="btn-link rr" href="#top"></a>
             </li>
             <li class="">
@@ -41,35 +44,116 @@
 <div id="process" class="process">
 </div>
 <div id="about" class="row about-me">
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3"></div>
+    <div class="col-md-4">
+        <div class="image ed">
+            <p class="image-text">Education</p>
+        </div>
+        <div class="center">
+            <p>Attended Full Sail University</p>
+            <p>Agile Certified</p>
+            <p>HTML/CSS</p>
+            <p>Adobe Creative Suite Guru</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="image ex">
+            <p class="image-text">Experience</p>
+        </div>
+        <div class="center">
+            <p><span class="orange">09/2011 - 06/2012</span></p>
+            <p>FAME Sr. QA Engineer</p>
+            <p><span class="orange">06/2012 - Present</span></p>
+            <p>FAME - User Experience Designer</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="image ho">
+            <p id ="hobbies" class="image-text">Hobbies</p>
+        </div>
+        <div class="center">
+            <p>Avid PC Gamer</p>
+            <p>Traveler <span class="orange">[27/50]</span></p>
+            <p>Writer/Artist</p>
+            <p>Game of Thrones Junkie</p>
+            <p>Sports Fanatic</p>
+        </div>
+    </div>
 </div>
 <div id="contact" class="designThings">
-    <div class="row col-md-6 col-md-offset-3">
+    <div class="row">
         <p class="smallOrange"> Let's Design Things  </p>
+        <div class="col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-2">
+            @using (@Html.BeginForm("Save", "Home", FormMethod.Post, new { @class="hidden form-horizontal form", @id="inquiry" }))
+            {
+                <div class="form-group">
+                    @Html.LabelFor(x => x.FirstName, new { @class = "col-sm-1 col-sm-offset-3 control-label white" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(x => x.FirstName, new { @placeholder="Enter your first name", @class="form-control" })
+                    </div>
+                    <div class="col-sm-4">
+                        @Html.ValidationMessageFor(x => x.FirstName, "The first name field is required.")
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.LastName, new { @class = "col-sm-1 col-sm-offset-3 control-label white" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(x => x.LastName, new { @placeholder="Enter your last name", @class="form-control" })
+                    </div>
+                    <div class="col-sm-4">
+                        @Html.ValidationMessageFor(x => x.LastName, "The last name field is required.")
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.Email, new { @class = "col-sm-1 col-sm-offset-3 control-label white" })
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(x => x.Email, new { @type = "Email", @placeholder = "Email", @class = "form-control" })
+                    </div>
+                    <div class="col-sm-4">
+                        @Html.ValidationMessageFor(x => x.Email, "You must enter a valid email address.")
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.Description, new {@class = "col-sm-1 col-sm-offset-3 control-label white" })
+                    <div class="col-sm-4">
+                        @Html.TextAreaFor(x => x.Description, new {@placeholder="Give a brief description of your idea.", @class = "form-control" })
+                    </div>
+                    <div class="col-sm-4">
+                        @Html.ValidationMessageFor(x => x.Description, "A brief description of you project is required.")
+                    </div>
+                </div>
+                @Html.HiddenFor(x => x.InquiryID);
+                <div class="form-group">
+                    <div class="col-sm-2 col-sm-offset-4">
+                        <button id="submit" type="submit" class="btn btn-default">Submit</button>   
+                        <button id="cancel" class="btn btn-default">Cancel</button> 
+                    </div>
+                </div>
+            }
+        </div>
         <p class="pushDown">Interested in working with me?</p>
         <div class="buttonContainer">
-            <div class="btn-link button">
-                <a href="">CV\CL</a>
+            <div class="col-sm-6 col-md-6">
+                <div id="resume" class="col-sm-3 col-sm-offset-9 col-md-3 col-md-offset-9 btn-link button">
+                    <a href="">CV\CL</a>
+                </div>
             </div>
-            <div class="btn-link button">
-                <a href="">Contact Me</a>
+            <div class="col-sm-6 col-md-6">
+                <div id="contactme" class="col-sm-3 btn-link button">
+                    <a href="">Contact</a>
+                </div>
             </div>
         </div>
     </div>
-    <div style="color:white">
-        <p>@Model.FirstName</p> 
-        <p>@Model.LastName</p> 
-        <p>@Model.Email</p> 
-        <p>@Model.Description</p>
-        <p>@Model.DateTime</p> 
+</div>
+<div class="row">
+    <div class="col-md-6 col-lg-6">
+        <div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-2 col-md-offset-9 col-lg-2 col-lg-offset-9" style="margin-top: -150px;">
+            <a href="https://www.facebook.com/Sethg119"><img class="btn-link" src="/Content/Images/facebook.png" alt="facebook link" /></a>
+        </div>
     </div>
-    <div class="hidden">
-        @using (@Html.BeginForm("Save", "Home", FormMethod.Post))
-        {
-            
-        }        
+    <div class ="col-md-6 col-lg-6">
+        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2" style="margin-top: -120px;">
+            <a href="https://www.linkedin.com/profile/view?id=297937452"><img class="btn-link" src="/Content/Images/Linkedin.png" alt="linkedin link" /></a>
+        </div>
     </div>
 </div>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using Microsoft.Ajax.Utilities;
 using Portfolio.Models;
 
 namespace Portfolio.Code
@@ -26,7 +27,10 @@ namespace Portfolio.Code
 
         public void SaveInquiry(Inquiry inquiry)
         {
+            inquiry.DateTime = DateTime.Now;
+            _dbContext.Entry(inquiry).State = inquiry.InquiryID == 0 ? EntityState.Added : EntityState.Modified;
             _dbContext.Inquiries.Add(inquiry);
+            _dbContext.SaveChanges();
         }
     }
 }

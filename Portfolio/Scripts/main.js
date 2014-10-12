@@ -36,6 +36,24 @@
         addNavAndLogo();
     });
 
+    $("#contactme").on('click', function() {
+        $(".buttonContainer").hide().fadeOut('slow');
+        $(".pushDown").hide().fadeOut('slow');
+        $("#inquiry").hide().removeClass("hidden");
+        $("#inquiry").fadeIn(2000);
+    });
+
+    $("#cancel").on('click', function () {
+        event.preventDefault();
+        $("#inquiry").hide().addClass("hidden");
+        $(".buttonContainer").hide().fadeIn('slow');
+        $(".pushDown").hide().fadeIn('slow');
+    });
+
+    $("#resume").on('click', function() {
+        window.open("Home/Resume", "My resume");
+    });
+
     var clearNavAndLogo = function() {
         $("#back").removeClass('hidden');
         $("#nav").hide();

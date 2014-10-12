@@ -12,9 +12,14 @@
 }
 
 .enlarge {
-    font-size: 36px;
+    font-size: 46px;
     margin-left: 50px;
     margin-top: 50px;
+    color: white;
+}
+
+.enlarge:hover {
+    color: white;
 }
 
 .water {
@@ -139,17 +144,79 @@ hr {
     background-repeat: no-repeat;
 }
 
+.white {
+    color: white;
+}
+
+#about div.col-md-4 {
+    height: 425px;
+}
+
 .about-me div {
-    list-style: none;
-    height: 300px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 25px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+}
+
+.about-me div .center {
+    margin-top: 20px;
 }
 
 .designThings {
     height:750px;
     background-image: url('../Content/Images/contactbkg.jpg')
+}
+
+.about-me .image-text {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.about-me .image {
+    background-repeat: no-repeat;
+    height: 252px;
+    width: 252px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.ed {
+    background-image: url('../Content/Images/education.png');
+}
+
+.image .image-text {
+    padding-top: 170px;
+}
+
+.ex {
+    background-image: url('../Content/Images/exp.png');
+}
+
+.ho {
+    background-image: url('../Content/Images/hobbies.png');
+}
+
+#hobbies {
+    padding-top: 165px;
+}
+
+.center {
+    width: 252px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.center p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.orange {
+    color: orange;
+   
 }
 
 .smallOrange {
@@ -167,6 +234,11 @@ hr {
     text-align:center;
 }
 
+.form {
+    margin-top: 75px;
+    color: white;
+}
+
 .clearMargin {
     margin:0px;
 }
@@ -174,17 +246,9 @@ hr {
 .buttonContainer {
     margin-top: 50px;
     height: 500px;
-    border: 1px solid black;
-}
-
-.buttonContainer div {
-    text-align: center;
-    display: inline-block;
-    float: none;
 }
 
 .button {
-    width: 200px;
     height: 100px;
     background-color: #ffab00;
     color: white;
@@ -198,7 +262,6 @@ hr {
     box-shadow: inset 0px -10px 0px -3px #A36E00;
     -moz-box-shadow: inset 0px -10px 0px -3px #A36E00;
     -webkit-box-shadow: inset 0px -10px 0px -3px #A36E00;
-    border: 1px solid black;
 }
 
 .button a:link {
@@ -208,9 +271,11 @@ hr {
 
 .button a:visited {
     color: white;
+    text-decoration:none;
 }
 
 .button:hover {
+    text-decoration: none;
     background-color: #FFBC21;
     transition: background-color .2s linear;
     -o-transition: background-color .2s linear;
@@ -230,25 +295,16 @@ hr {
     margin-top: 82px;
 }
 
+.field-validation-valid
+{
+    display: none;
+}
 
+.validation-summary-valid
+{
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    text-align: center;
+}

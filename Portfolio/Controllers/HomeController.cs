@@ -6,35 +6,26 @@ namespace Portfolio.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IUnitOfWork _unitOfWork;
-        public HomeController(IUnitOfWork unitOfWork)
+        private readonly IRepository _repo;
+        public HomeController(IRepository repository)
         {
-           
-            _unitOfWork = unitOfWork;
+            _repo = repository;
         }
         public ActionResult Index()
         {
-            var inquiry = _unitOfWork.Repository.GetTopInquiry();
-            return View(inquiry);
-        }
-
-        public void Save(Inquiry inquiry)
-        {
-            _unitOfWork.Repository.SaveInquiry(inquiry);
-            _unitOfWork.Save();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
+        public ActionResult Resume()
+        {
             return View();
+        }
+
+        public ActionResult Save(Inquiry inquiry)
+        {
+            _repo.SaveInquiry(inquiry);
+            return RedirectToAction("Index");
+
         }
     }
 }

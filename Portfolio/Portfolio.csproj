@@ -168,12 +168,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Code\AutofacBootstrap.cs" />
     <Compile Include="Code\InquiryContext.cs" />
-    <Compile Include="Code\IContext.cs" />
     <Compile Include="Code\InquiryInitializer.cs" />
-    <Compile Include="Code\IUnitOfWork.cs" />
     <Compile Include="Code\Repository.cs" />
     <Compile Include="Code\IRepository.cs" />
-    <Compile Include="Code\UnitOfWork.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -190,12 +187,18 @@
     <Content Include="Content\Images\adv_rw.jpg" />
     <Content Include="Content\Images\bkg.jpg" />
     <Content Include="Content\Images\contactbkg.jpg" />
+    <Content Include="Content\Images\education.png" />
+    <Content Include="Content\Images\exp.png" />
+    <Content Include="Content\Images\facebook.png" />
     <Content Include="Content\Images\FINAL_IMAGE_EXAMPLE.jpg" />
+    <Content Include="Content\Images\hobbies.png" />
     <Content Include="Content\Images\Iceberg.png" />
     <Content Include="Content\Images\icebergbkg.jpg" />
+    <Content Include="Content\Images\Linkedin.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\picwave_mock.jpg" />
     <Content Include="Content\Images\pw_rw.jpg" />
+    <Content Include="Content\Images\Resume.jpg" />
     <Content Include="Content\Images\rr_rw.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -232,6 +235,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Resume.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
