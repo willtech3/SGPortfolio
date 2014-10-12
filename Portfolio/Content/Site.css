@@ -265,17 +265,8 @@ hr {
     -webkit-box-shadow: inset 0px -10px 0px -3px #A36E00;
 }
 
-.button a:link {
-    text-decoration:none;
-    color:white;
-}
-
-.button a:visited {
-    color: white;
-    text-decoration:none;
-}
-
 .button:hover {
+    color: white;
     text-decoration: none;
     background-color: #FFBC21;
     transition: background-color .2s linear;

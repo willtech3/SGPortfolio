@@ -50,10 +50,6 @@
         $(".pushDown").hide().fadeIn('slow');
     });
 
-    var validate = $('#inquiry').validate({
-        // your rules & options
-    });
-
     $("#resume").on('click', function() {
         window.open("Home/Resume", "My resume");
     });

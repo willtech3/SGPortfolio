@@ -82,7 +82,7 @@
 <div id="contact" class="designThings">
     <div class="row">
         <p class="smallOrange"> Let's Design Things  </p>
-        <div class="col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-2">
+        <div class="col-sm-10 col-sm-offset-1">
             @using (@Html.BeginForm("Save", "Home", FormMethod.Post, new { @class="hidden form-horizontal form", @id="inquiry" }))
             {
                 <div class="form-group">
@@ -115,15 +115,15 @@
                 <div class="form-group">
                     @Html.LabelFor(x => x.Description, new {@class = "col-sm-1 col-sm-offset-3 control-label white" })
                     <div class="col-sm-4">
-                        @Html.TextAreaFor(x => x.Description, new {@placeholder="Give a brief description of your idea.", @class = "form-control" })
+                        @Html.TextAreaFor(x => x.Description, new { @placeholder = "Give a brief description of your idea.", @class = "form-control" })
                     </div>
                     <div class="col-sm-4">
                         @Html.ValidationMessageFor(x => x.Description, "A brief description of you project is required.")
                     </div>
                 </div>
                 @Html.HiddenFor(x => x.InquiryID);
-                <div class="form-group">
-                    <div class="col-sm-2 col-sm-offset-4">
+                <div class="form-group ">
+                    <div class="col-sm-4 col-sm-offset-4">
                         <button id="submit" type="submit" class="btn btn-default">Submit</button>   
                         <button id="cancel" class="btn btn-default">Cancel</button> 
                     </div>
@@ -134,12 +134,12 @@
         <div class="buttonContainer">
             <div class="col-sm-6 col-md-6">
                 <div id="resume" class="col-sm-3 col-sm-offset-9 col-md-3 col-md-offset-9 btn-link button">
-                    <a href="">CV\CL</a>
+                   CV\CL
                 </div>
             </div>
             <div class="col-sm-6 col-md-6">
                 <div id="contactme" class="col-sm-3 btn-link button">
-                    <a href="">Contact</a>
+                    Contact
                 </div>
             </div>
         </div>
