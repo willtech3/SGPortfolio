@@ -1,4 +1,6 @@
-﻿
+﻿body {
+    overflow-x: hidden;
+}
 .moveup {
     margin-top:-25px;
 }
