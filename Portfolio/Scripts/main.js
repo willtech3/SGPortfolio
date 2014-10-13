@@ -24,11 +24,13 @@
 
     $(".pw").on('click', function () {
         $('.water').css("background-image", "url(../Content/Images/picwave_mock.jpg)").hide().fadeIn('slow');
+        $('.water').css("background-attachment", "scroll");
         clearNavAndLogo();
     });
 
     $(".rr").on('click', function() {
         $('.water').css("background-image", "url(../Content/Images/reviewrhino.jpg)").hide().fadeIn('slow');
+        $('.water').css("background-attachment", "scroll");
         clearNavAndLogo();
     });
 
@@ -63,6 +65,7 @@
 
     var addNavAndLogo = function() {
         $('.water').css("background-image", "url(../Content/Images/bkg.jpg)").hide().fadeIn(500);
+        $('.water').css("background-attachment", "fixed");
         $("#back").addClass('hidden');
         $("#nav").fadeIn(500);
         $("#Seth").fadeIn(500);

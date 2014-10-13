@@ -24,9 +24,9 @@
 
 .water {
     background:url('../Content/Images/bkg.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     width: 100%;
     min-height: 750px;
     margin-top:99px;
@@ -126,10 +126,28 @@ hr {
     margin:0px;
     padding:0px;
 }
-.process {
+/*.process {
     background-image:url('../Content/Images/FINAL_IMAGE_EXAMPLE.jpg');
     background-repeat: no-repeat;
     height:1080px;
+}*/
+#imageProcess {
+    background-image:url('../Content/Images/FINAL_IMAGE_EXAMPLE.jpg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position:50% 50%;
+}
+
+#imageProcess-inner {
+    display: block;
+    height: 0;
+    padding-top: 56.25%;
+
 }
 
 .rr {
