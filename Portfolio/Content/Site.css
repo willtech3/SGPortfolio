@@ -1,4 +1,5 @@
-﻿body {
+﻿
+body {
     overflow-x: hidden;
 }
 .moveup {
@@ -54,6 +55,7 @@
 }
 
 .navlist  li {
+    font-family: 'Montserrat';
     height: 61px;
     text-align: center;
     font-size: 1.5em;
@@ -85,18 +87,24 @@ hr {
     padding:0;
 }
 .seth p {
-    font-family: Helvetica, serif;
-    font-size:3em;
+    font-family: 'Allerta', sans-serif;
+    font-size:2.2em;
     color:white;
     text-align:center;
     margin:0 auto;
 }
 
 .seth p.bigorange {
+    font-family: 'Montserrat';
     font-size: 5em;
-    font-weight:700;
+    font-weight:900;
     color:orange;
 }
+
+/*.seth p.bigorange span {
+    font-family: 'Lily Script One', cursive;
+    font-weight: 500;
+}*/
 
 .recent-work {
     padding:0;
@@ -104,6 +112,7 @@ hr {
 }
 
 .recent-work p {
+    font-family: 'Montserrat';
     font-size:2em;
     font-weight: 700;
     color:orange;
@@ -176,6 +185,7 @@ hr {
 .about-me div {
     margin-top: 15px;
     margin-bottom: 25px;
+     font-family: 'Montserrat';
 }
 
 .about-me div .center {
@@ -183,6 +193,7 @@ hr {
 }
 
 .designThings {
+    font-family: 'Montserrat';
     height:750px;
     background-image: url('../Content/Images/contactbkg.jpg')
 }
@@ -322,6 +333,7 @@ footer {
 @media screen and (min-width:992px) and (max-width:1280px) {
     .water {
         background-image: url(../Content/Images/bkg1280.jpg);
+        background-size: auto auto;
         min-height: 504px; 
         margin-top:62px;
     } 
@@ -365,6 +377,7 @@ footer {
         background-image: url(../Content/Images/bkg992.jpg);
         min-height: 390px; 
         margin-top:62px;
+        background-size: auto auto;
     } 
     .seth {
         margin-top:25px;
