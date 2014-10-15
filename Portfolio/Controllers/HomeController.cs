@@ -23,6 +23,7 @@ namespace Portfolio.Controllers
         }
 
         public ActionResult Inquiries()
+        
         {
             var inquiries = _repo.GetInquiries().ToList();
             return View(inquiries);
@@ -30,10 +31,8 @@ namespace Portfolio.Controllers
 
         public ActionResult Save(Inquiry inquiry)
         {
-            if (ModelState.IsValid)
-            {
-                _repo.SaveInquiry(inquiry);    
-            }
+            _repo.SaveInquiry(inquiry);    
+
             return RedirectToAction("Index");
         }
     }

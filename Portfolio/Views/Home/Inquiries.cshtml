@@ -4,22 +4,22 @@
     ViewBag.Title = "View";
 }
 
-
-
-<div class="row">
-    @foreach (var item in Model)
-    {
-        <span class="col-sm-3">
-            @item.FirstName
-        </span>
-        <span class="col-sm-3">
-            @item.LastName
-        </span>
-        <span class="col-sm-3">
-            @item.Email
-        </span>
-        <span class="col-sm-3">
-            @item.Description
-        </span>
-    }
+<div class="row" style="margin-top:100px;">
+    <div class="col-sm-8 col-sm-offset-2">
+        @foreach (var item in Model)
+        {
+            <span class="col-sm-3">
+                @item.FirstName
+            </span>
+            <span class="col-sm-3">
+                @item.LastName
+            </span>
+            <span class="col-sm-3">
+                @item.Email
+            </span>
+            <span class="col-sm-3">
+                @item.Description
+            </span>
+        }
+    </div>
 </div>

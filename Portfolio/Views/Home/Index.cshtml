@@ -7,21 +7,21 @@
     <span id="back" class="glyphicon glyphicon-chevron-left btn enlarge hidden"></span>
     <div id="logo" class="row logo">
         <div class="col-sm-1-offset-6">
-            <a href="/">Seth Gardner, UI/UX Designer</a>
+            <a href="/">Seth Gardner, UI/UX DESIGNER</a>
         </div>
     </div>
     <div id="nav"class="row moveup">
-        <ul class="navlist col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-            <li class="col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2"><a href="#work">Work</a></li>
-            <li class="col-sm-2 col-md-2 col-lg-2"><a href="#process">Process</a></li>
-            <li class="col-sm-2 col-md-2 col-lg-2"><a href="#about">About</a></li>
-            <li class="col-sm-2 col-md-2 col-lg-2"><a href="#contact">Contact</a></li>
+        <ul class="navlist col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <li class="col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2"><a href="#work">WORK</a></li>
+            <li class="col-sm-2 col-md-2 col-lg-2"><a href="#process">PROCESS</a></li>
+            <li class="col-sm-2 col-md-2 col-lg-2"><a href="#about">ABOUT</a></li>
+            <li class="col-sm-2 col-md-2 col-lg-2"><a href="#contact">CONTACT</a></li>
         </ul>
         <hr />
     </div>
     <div id="Seth" class="row seth">
         <p>Hello, my name is Seth and I'm a</p>
-        <p class="bigorange">UX & UI Designer</p>
+        <p class="bigorange">UX & UI DESIGNER</p>
         <p>based in the sunshine state of Florida.</p>
     </div>
 </div>
@@ -92,8 +92,7 @@
             @using (@Html.BeginForm("Save", "Home", FormMethod.Post, new { @class="hidden form-horizontal form", @id="inquiry" }))
             {
                 <div class="form-group">
-                    @Html.LabelFor(x => x.FirstName, new { @class = "col-sm-1 col-sm-offset-3 control-label white" })
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-sm-offset-4">
                         @Html.TextBoxFor(x => x.FirstName, new { @placeholder="Enter your first name", @class="form-control" })
                     </div>
                     <div class="col-sm-4">
@@ -101,8 +100,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    @Html.LabelFor(x => x.LastName, new { @class = "col-sm-1 col-sm-offset-3 control-label white" })
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-sm-offset-4">
                         @Html.TextBoxFor(x => x.LastName, new { @placeholder="Enter your last name", @class="form-control" })
                     </div>
                     <div class="col-sm-4">
@@ -110,8 +108,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    @Html.LabelFor(x => x.Email, new { @class = "col-sm-1 col-sm-offset-3 control-label white" })
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-sm-offset-4">
                         @Html.TextBoxFor(x => x.Email, new { @type = "Email", @placeholder = "Email", @class = "form-control" })
                     </div>
                     <div class="col-sm-4">
@@ -119,8 +116,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    @Html.LabelFor(x => x.Description, new {@class = "col-sm-1 col-sm-offset-3 control-label white" })
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-sm-offset-4">
                         @Html.TextAreaFor(x => x.Description, new { @placeholder = "Give a brief description of your idea.", @class = "form-control" })
                     </div>
                     <div class="col-sm-4">
