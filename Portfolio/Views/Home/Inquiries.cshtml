@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Portfolio.Models.Inquiry>
+
+@{
+    ViewBag.Title = "View";
+}
+
+
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <span class="col-sm-3">
+            @item.FirstName
+        </span>
+        <span class="col-sm-3">
+            @item.LastName
+        </span>
+        <span class="col-sm-3">
+            @item.Email
+        </span>
+        <span class="col-sm-3">
+            @item.Description
+        </span>
+    }
+</div>

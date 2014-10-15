@@ -187,25 +187,45 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\afalogo.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\advlarge.jpg" />
+    <Content Include="Content\Images\Advsmall.jpg" />
     <Content Include="Content\Images\adv_rw.jpg" />
+    <Content Include="Content\Images\adv_rw_sm.jpg" />
+    <Content Include="Content\Images\adv_rw_xsm.jpg" />
+    <Content Include="Content\Images\AFA.jpg" />
+    <Content Include="Content\Images\AFA992.jpg" />
+    <Content Include="Content\Images\afalogo.jpg" />
+    <Content Include="Content\Images\afalogo_sm.jpg" />
+    <Content Include="Content\Images\afalogo_xsm.jpg" />
     <Content Include="Content\Images\bkg.jpg" />
+    <Content Include="Content\Images\bkg1280.jpg" />
+    <Content Include="Content\Images\bkg992.jpg" />
     <Content Include="Content\Images\contactbkg.jpg" />
     <Content Include="Content\Images\education.png" />
+    <Content Include="Content\Images\education_sm.png" />
     <Content Include="Content\Images\exp.png" />
+    <Content Include="Content\Images\exp_sm.png" />
     <Content Include="Content\Images\facebook.png" />
-    <Content Include="Content\Images\FINAL_IMAGE_EXAMPLE.jpg" />
+    <Content Include="Content\Images\facebook_sm.png" />
     <Content Include="Content\Images\hobbies.png" />
-    <Content Include="Content\Images\Iceberg.png" />
-    <Content Include="Content\Images\icebergbkg.jpg" />
+    <Content Include="Content\Images\hobbies_sm.png" />
+    <Content Include="Content\Images\iceberg_final_bkg.jpg" />
     <Content Include="Content\Images\Linkedin.png" />
+    <Content Include="Content\Images\Linkedin_sm.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\picwave_mock.jpg" />
     <Content Include="Content\Images\pw_rw.jpg" />
+    <Content Include="Content\Images\pw_rw_sm.jpg" />
+    <Content Include="Content\Images\pw_rw_xsm.jpg" />
     <Content Include="Content\Images\Resume.jpg" />
     <Content Include="Content\Images\reviewrhino.jpg" />
     <Content Include="Content\Images\rr_rw.jpg" />
+    <Content Include="Content\Images\rr_rw_sm.jpg" />
+    <Content Include="Content\Images\rr_rw_xsm.jpg" />
+    <Content Include="Content\Images\SGUX_logo_small.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -244,6 +264,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Resume.cshtml" />
+    <Content Include="Views\Home\Inquiries.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
