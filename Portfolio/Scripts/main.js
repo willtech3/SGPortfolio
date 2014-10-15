@@ -9,18 +9,41 @@
             var target = this.hash,
             $target = $(target);
 
-            console.log(target);
-            console.log($(target));
-
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
             }, 900, 'swing', function () {
                 window.location.hash = target;
             });
         });
+        smallImg("#linkedin", "../Content/Images/Linkedin_sm.png");
+        smallImg("#facebook", "../Content/Images/facebook_sm.png");
 
         $("#Seth").hide().fadeIn(1500);
+
     });
+
+
+    $(window).resize(function () {
+        smallImg("#linkedin", "../Content/Images/Linkedin_sm.png");
+        smallImg("#facebook", "../Content/Images/facebook_sm.png");
+    });
+
+
+    function smallImg(targetClass, imageSrc) {
+        var width = window.innerWidth;
+        if (width < 992) {
+            $(targetClass).attr("src", imageSrc);
+        }
+        else {
+            if (targetClass == "#facebook") {
+                $(targetClass).attr("src", "../Content/Images/facebook.png");
+            }
+                
+            if (targetClass == "#linkedin") {
+                $(targetClass).attr("src", "../Content/Images/Linkedin.png");
+            }
+        }
+    }
 
     $(".pw").on('click', function () {
         $('.water').css("background-image", "url(../Content/Images/picwave_mock.jpg)").hide().fadeIn('slow');
@@ -30,6 +53,18 @@
 
     $(".rr").on('click', function() {
         $('.water').css("background-image", "url(../Content/Images/reviewrhino.jpg)").hide().fadeIn('slow');
+        $('.water').css("background-attachment", "scroll");
+        clearNavAndLogo();
+    });
+
+    $(".adv").on('click', function() {
+        $('.water').css("background-image", "url(../Content/Images/advlarge.jpg)").hide().fadeIn('slow');
+        $('.water').css("background-attachment", "scroll");
+        clearNavAndLogo();
+    });
+
+    $(".advff").on('click', function() {
+        $('.water').css("background-image", "url(../Content/Images/afa.jpg)").hide().fadeIn('slow');
         $('.water').css("background-attachment", "scroll");
         clearNavAndLogo();
     });

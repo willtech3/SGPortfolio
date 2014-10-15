@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using Portfolio.Code;
 using Portfolio.Models;
 
@@ -21,14 +22,18 @@ namespace Portfolio.Controllers
             return View();
         }
 
+        public ActionResult Inquiries()
+        
+        {
+            var inquiries = _repo.GetInquiries().ToList();
+            return View(inquiries);
+        }
+
         public ActionResult Save(Inquiry inquiry)
         {
-            if (ModelState.IsValid)
-            {
-                _repo.SaveInquiry(inquiry);    
-            }
-            return RedirectToAction("Index");
+            _repo.SaveInquiry(inquiry);    
 
+            return RedirectToAction("Index");
         }
     }
 }

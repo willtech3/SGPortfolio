@@ -31,23 +31,24 @@
     background-attachment:fixed;
     width: 100%;
     min-height: 750px;
-    margin-top:99px;
+    margin-top:55px;
 }
 
 .logo {
     position:relative;
-    height: 132px;
-    width: 144px;
-    background:url('../Content/Images/logo.png');
+    height: 75px;
+    width: 100px;
+    background:url('../Content/Images/SGUX_logo_small.png');
     background-size:100% 100%;
     background-repeat:no-repeat;
     margin:0 auto;
     display:block;
     text-indent:-999em;
-    top:-66px;
+    top:-38px;
 }
 
 .navlist {
+    margin-top: 50px;
     list-style:none;
     margin-bottom:0px;
 }
@@ -72,7 +73,6 @@
     color:orange;
 }
 
-
 hr {
     clear: both;
     width: 33%;
@@ -81,7 +81,7 @@ hr {
 }
 
 .seth {
-    margin-top:50px;
+    margin-top:60px;
     padding:0;
 }
 .seth p {
@@ -128,13 +128,9 @@ hr {
     margin:0px;
     padding:0px;
 }
-/*.process {
-    background-image:url('../Content/Images/FINAL_IMAGE_EXAMPLE.jpg');
-    background-repeat: no-repeat;
-    height:1080px;
-}*/
+
 #imageProcess {
-    background-image:url('../Content/Images/FINAL_IMAGE_EXAMPLE.jpg');
+    background-image:url('../Content/Images/iceberg_final_bkg.jpg');
     background-repeat: no-repeat;
     display: inline-block;
     width: 100%;
@@ -164,6 +160,10 @@ hr {
     background-image: url('../Content/Images/pw_rw.jpg');
     background-repeat: no-repeat;
 }
+.advff {
+    background-image: url('../Content/Images/afalogo.jpg');
+    background-repeat: no-repeat;
+}
 
 .white {
     color: white;
@@ -176,7 +176,6 @@ hr {
 .about-me div {
     margin-top: 15px;
     margin-bottom: 25px;
-    /*border: 1px solid black;*/
 }
 
 .about-me div .center {
@@ -298,15 +297,6 @@ hr {
     -webkit-box-shadow: inset 0px -10px 0px -3px #875E00;
 }
 
-/*currently deprecated*/
-.iceberg {
-    background: url('../Content/Images/Iceberg.png') no-repeat;
-    height:1080px;
-    width:900px;
-    float:right;
-    margin-top: 82px;
-}
-
 .field-validation-valid
 {
     display: none;
@@ -319,4 +309,171 @@ hr {
 
 footer {
     text-align: center;
+}
+
+.fb {
+    margin-top: -150px;
+}
+
+.link {
+    margin-top: -120px;
+}
+
+@media screen and (min-width:992px) and (max-width:1280px) {
+    .water {
+        background-image: url(../Content/Images/bkg1280.jpg);
+        min-height: 504px; 
+        margin-top:62px;
+    } 
+
+     .seth {
+        margin-top:25px;
+        padding:0;
+    }
+    .seth p {
+        font-size:2.5em;
+    }
+    .seth p.bigorange {
+        font-size: 3.5em;
+    }
+
+        .recent-work ul li {
+        height: 225px;
+        width: 225px;
+    }
+
+    .recent-work ul li a {
+        height:225px;
+        width:225px;
+    }
+    .rr {
+        background-image: url('../Content/Images/rr_rw_sm.jpg');
+    }
+    .adv {
+        background-image: url('../Content/Images/adv_rw_sm.jpg');
+    }
+    .pw {
+        background-image: url('../Content/Images/pw_rw_sm.jpg');
+    }
+    .advff {
+         background-image: url('../Content/Images/afalogo_sm.jpg');
+    }
+}
+
+@media screen and (max-width:992px) {
+    .water {
+        background-image: url(../Content/Images/bkg992.jpg);
+        min-height: 390px; 
+        margin-top:62px;
+    } 
+    .seth {
+        margin-top:25px;
+        padding:0;
+    }
+    .seth p {
+        font-size:2em;
+    }
+    .seth p.bigorange {
+        font-size: 3em;
+    }
+
+    .navlist {
+        margin-top: 25px;
+    }
+
+    .navlist li {
+        height: 50px;
+    }
+
+    .moveup {
+        margin-top: -30px;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    .about-me .image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-me div {
+        margin-bottom: 0px;
+    }
+
+    .center {
+        width: 200px;
+    }
+
+    .ex {
+        background-image: url('../Content/Images/exp_sm.png');
+    }
+
+    .ho {
+        background-image: url('../Content/Images/hobbies_sm.png');
+    }
+
+    .ed {
+        background-image: url('../Content/Images/education_sm.png');
+    }
+
+    .image .image-text {
+        padding-top: 130px;
+    }
+
+    #hobbies {
+        padding-top: 127px;
+    }
+
+    .designThings {
+        height:500px;
+        background-image: url('../Content/Images/contactbkg.jpg')
+    }
+
+    .smallOrange {
+        margin-top: 20px;
+        font-size: 2em;
+    }
+
+    .pushDown {
+        margin-top:20px;
+        font-size: 2em;
+    }
+
+    .form {
+        margin-top: 20px;
+    }
+
+    .fb {
+        margin-top: -99px;
+    }
+
+    .link {
+        margin-top: -98px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+     .recent-work ul li {
+        height: 175px;
+        width: 175px;
+    }
+
+    .recent-work ul li a {
+        height:175px;
+        width:175px;
+    }
+    .rr {
+        background-image: url('../Content/Images/rr_rw_xsm.jpg');
+    }
+    .adv {
+        background-image: url('../Content/Images/adv_rw_xsm.jpg');
+    }
+    .pw {
+        background-image: url('../Content/Images/pw_rw_xsm.jpg');
+    }
+    .advff {
+         background-image: url('../Content/Images/afalogo_xsm.jpg');
+    }
 }
