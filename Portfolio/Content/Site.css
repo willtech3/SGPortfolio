@@ -333,7 +333,6 @@ footer {
 @media screen and (min-width:992px) and (max-width:1280px) {
     .water {
         background-image: url(../Content/Images/bkg1280.jpg);
-        background-size: auto auto;
         min-height: 504px; 
         margin-top:62px;
     } 
@@ -377,7 +376,6 @@ footer {
         background-image: url(../Content/Images/bkg992.jpg);
         min-height: 390px; 
         margin-top:62px;
-        background-size: auto auto;
     } 
     .seth {
         margin-top:25px;
