@@ -162,7 +162,7 @@ hr {
     background-repeat: no-repeat;
 }
 .adv {
-    background-image: url('../Content/Images/adv_rw.jpg');
+    background-image: url('../Content/Images/advantage.jpg');
     background-repeat: no-repeat;
 }
 .pw {
@@ -361,7 +361,7 @@ footer {
         background-image: url('../Content/Images/rr_rw_sm.jpg');
     }
     .adv {
-        background-image: url('../Content/Images/adv_rw_sm.jpg');
+        background-image: url('../Content/Images/advantage_rw_sm.jpg');
     }
     .pw {
         background-image: url('../Content/Images/pw_rw_sm.jpg');
@@ -479,7 +479,7 @@ footer {
         background-image: url('../Content/Images/rr_rw_xsm.jpg');
     }
     .adv {
-        background-image: url('../Content/Images/adv_rw_xsm.jpg');
+        background-image: url('../Content/Images/advantage_rw_xsm.jpg');
     }
     .pw {
         background-image: url('../Content/Images/pw_rw_xsm.jpg');
